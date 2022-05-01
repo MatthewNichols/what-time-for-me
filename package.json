@@ -1,0 +1,24 @@
+{
+  "name": "what-time-for-me",
+  "version": "1.0.0",
+  "description": "A static display of what time it is in a configured place. Intended to go on my website to remind friends that live elsewhere what time it is where I am.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewNichols/what-time-for-me.git"
+  },
+  "author": "Matthew Nichols",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewNichols/what-time-for-me/issues"
+  },
+  "homepage": "https://github.com/MatthewNichols/what-time-for-me#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
