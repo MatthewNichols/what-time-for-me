@@ -4,6 +4,21 @@ title: What time is it where Matthew is?
 ---
 
 <h1>{{ title }}</h1>
+I am probably in {{ where.description }} which is in the '<span id="myCurrentTimeZone"></span>' time zone.
+<br>
+The current time in {{ where.description }} is <span id="myCurrentTime"></span>
+<br>
+<br>
+You seem to be in the '<span id="yourCurrentTimeZone"></span>' time zone.
+<br>
+Your current time seems to be <span id="yourCurrentTime"></span>
 
+<script>
+  const tzData = {
+    description: "{{ where.description }}",
+    timezoneIANA: "{{ where.timezoneIANA }}"
+  }
+</script>
 
+<script src="/script/libs/luxon.min.js"></script>
 <script src="/script/main.js"></script>
